@@ -1,4 +1,4 @@
-</strong> Bibliotecas utilizadas: </>
+</strong> Bibliotecas utilizadas: </strong>
 - Opencv-Python
 - Face Recognition
 - OS
