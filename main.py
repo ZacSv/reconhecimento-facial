@@ -10,7 +10,8 @@ encodeBase = fr.face_encodings(img_base)[0]
 
 
 directory_base = 'C:/Users/isacv/OneDrive/Área de Trabalho/Teste'# Diretorio origem que o algoritimo ira percorrer
-directory_dest = 'C:/Users/isacv/OneDrive/Área de Trabalho/foto' # Diretorio para qual as fotos  compatíveis com a base serão enviadas
+directory_dest = 'C:/Users/isacv/OneDrive/Área de Trabalho/fotos-mae' # Diretorio para qual as fotos  compatíveis com a base serão enviadas
+count = 0
 
 #Percorre diretório raiz
 for pic_name in os.listdir(directory_base):
@@ -32,4 +33,9 @@ for pic_name in os.listdir(directory_base):
         print('Foto compatível, movendo para o novo diretório...')
     else:
         print('Foto não corresponde a base')
+
+    count += 1
+    print(str(count) + " foto(s) analizada(s)")
+
+
 cv2.waitKey(0)
